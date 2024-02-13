@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Gradient Color Generator</title>
+    <meta
+      name="description"
+      content="Gradient color Generator built using HTML, CSS and JavaScript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/44d53da720.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- JavaScript -->
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="gradient"></div>
+      <div class="row">
+        <div class="column">
+          <h4>Direction</h4>
+          <select name="direction" id="direction">
+            <option value="to bottom">To Bottom</option>
+            <option value="to top">To Top</option>
+            <option value="to right">To Right</option>
+            <option value="to left">To Left</option>
+            <option value="to right bottom">To Right Bottom</option>
+            <option value="to right top">To Right Top</option>
+            <option value="to left bottom">To Left Bottom</option>
+            <option value="to left top">To Left Top</option>
+          </select>
+        </div>
+        <div class="column">
+          <h4>Colors</h4>
+          <input class="colors" type="color" value="#EEA5A6" />
+          <input class="colors" type="color" value="#8E7AB5" />
+        </div>
+      </div>
+      <textarea class="row code" disabled>
+background: linear-gradient(to bottom, #EEA5A6, #8E7AB5);</textarea
+      >
+      <div class="row">
+        <button class="copy">
+          <i class="fas fa-regular fa-copy"></i> Copy Code
+        </button>
+        <button class="refresh">
+          <i class="fa fa-solid fa-refresh"></i> Refresh Colors
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

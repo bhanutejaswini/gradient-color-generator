@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b784b7;
+  height: 100vh;
+  font-family: "Gilda Display", serif;
+}
+
+.wrapper {
+  padding: 15px;
+  border-radius: 7px;
+  background-color: #f8edff;
+  min-width: 350px;
+  min-height: 350px;
+}
+
+.gradient {
+  border: 1px solid gray;
+  border-radius: 7px;
+  background: linear-gradient(to bottom, #eea5a6, #8e7ab5);
+  height: 200px;
+}
+
+.wrapper .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px auto;
+}
+
+.wrapper h4 {
+  color: #67729d;
+  margin-bottom: 7px;
+  letter-spacing: 0.07rem;
+}
+
+.wrapper select,
+option {
+  padding: 5px;
+  color: #8e7ab5;
+  font-weight: 600;
+}
+
+textarea {
+  padding: 10px;
+}
+
+.wrapper button {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.wrapper i {
+  margin-right: 0.25rem;
+}
+
+.copy {
+  background-color: #67729d;
+  color: #fff;
+}
+
+.refresh {
+  background-color: #fff;
+  color: #67729d;
+}
